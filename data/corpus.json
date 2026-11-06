@@ -1,0 +1,149 @@
+{
+  "title": "#SydneyRent: synthetic social media corpus on housing and renting in NSW",
+  "note": "SYNTHETIC DATA written for teaching (NVivo HDR workshop, University of Sydney, Nov 2026). All users, posts and events are fictional. Any resemblance to real people or accounts is coincidental.",
+  "users": [
+    {"handle": "nursenat_westie", "name": "Natalie", "gender": "Woman", "age_group": "25-34", "tenure": "Renter", "location": "Western Sydney", "bio": "ICU nurse. Coffee, night shifts, my cat Biscuit.",
+     "posts": [
+      {"date": "2026-03-04", "text": "Rent going up $95 a week from May. Got the letter on my day off. I do 12-hour night shifts keeping people alive and I can't afford to live near the hospital I work at. #SydneyRent"},
+      {"date": "2026-03-19", "text": "Went to look at a two-bedder in Penrith. Forty people at the inspection. Agent said 'offers above asking will be considered favourably'. Since when do you bid on a rental?"},
+      {"date": "2026-04-02", "text": "Honestly the worst part isn't the money. It's never knowing if you'll have to move again in twelve months. I haven't hung a single picture in this place. Why bother."},
+      {"date": "2026-04-21", "text": "Half my ward are looking at jobs in Dubbo or Wagga. Not because they want to leave, they just can't make the numbers work here. Who's going to staff the hospitals?"},
+      {"date": "2026-05-10", "text": "@investor_ian I get that your costs went up too. But I can't pass my costs on to anyone. That's the difference."}
+     ]},
+    {"handle": "jono_builds", "name": "Jono", "gender": "Man", "age_group": "35-49", "tenure": "Owner-occupier", "location": "Western Sydney", "bio": "Chippy. Dad of 3. Go the Panthers.",
+     "posts": [
+      {"date": "2026-03-07", "text": "Been building houses for 20 years. Problem's simple: not enough of them. Councils take 18 months to approve a granny flat. Fix the approvals and you fix half of this."},
+      {"date": "2026-03-28", "text": "Bought in Kingswood in 2012 for 420k. Couldn't do it now on my wage, no chance. My kids won't get the start I got and that keeps me up at night."},
+      {"date": "2026-04-15", "text": "Everyone wants more housing, just not on their street. Same blokes complaining about rents are at the council meeting fighting the townhouses down the road."},
+      {"date": "2026-05-02", "text": "Material costs up 30% since covid, can't get apprentices. Even if approvals were instant, we haven't got the workers to build it all."}
+     ]},
+    {"handle": "priya_in_parra", "name": "Priya", "gender": "Woman", "age_group": "25-34", "tenure": "Renter", "location": "Western Sydney", "bio": "Software engineer. Moved from Bengaluru in 2021. Learning to surf (badly).",
+     "posts": [
+      {"date": "2026-03-11", "text": "Applied for 23 rentals in Parramatta in five weeks. Good salary, perfect references. Rejected every time. A friend says agents prefer 'local-sounding' names. I don't want to believe it."},
+      {"date": "2026-04-03", "text": "Third person this week telling me migrants are the reason rents are high. I pay tax, I pay rent, I write the software your bank runs on. I'm not the landlord here."},
+      {"date": "2026-04-09", "text": "@retired_ray fair point that population growth adds demand. But we were invited here to fill skills shortages. Then nobody planned the housing. That's a government problem, not a me problem."},
+      {"date": "2026-04-30", "text": "Finally got a place! Paid six months upfront to beat other applicants. Wiped out my savings. Relieved and kind of sick about it at the same time."},
+      {"date": "2026-05-18", "text": "Neighbours brought over a curry welcome plate (better than mine, rude). First time in Sydney I feel like I live somewhere instead of just staying somewhere."}
+     ]},
+    {"handle": "glebe_gran", "name": "Margaret", "gender": "Woman", "age_group": "65+", "tenure": "Owner-occupier", "location": "Inner Sydney", "bio": "Retired librarian. Glebe since 1974. Grandmother of five.",
+     "posts": [
+      {"date": "2026-03-05", "text": "We bought our terrace in 1974 for $28,000 and everyone said we were mad. Now my granddaughter, a lawyer, shares a flat with three strangers. Something has gone very wrong."},
+      {"date": "2026-03-25", "text": "Tired of 'boomers caused this'. We worked hard, interest rates were 17% in 1989. But yes, I accept the deal we got isn't available to young people now. Both things can be true."},
+      {"date": "2026-04-17", "text": "Glebe used to be full of students, nurses, artists, wharfies. Now half the street is short-stay rentals with lockboxes. You don't know your neighbours when they change every weekend."},
+      {"date": "2026-05-06", "text": "Helped my grandson with his deposit. We could. Many families can't. So we're rebuilding a class system one family loan at a time. Not proud of the system, though I'm glad to help him."},
+      {"date": "2026-05-21", "text": "Would happily downsize to a nice two-bedroom nearby but there's nothing suitable and the stamp duty is eye-watering. So I rattle around in four bedrooms. Silly, isn't it."}
+     ]},
+    {"handle": "investor_ian", "name": "Ian", "gender": "Man", "age_group": "50-64", "tenure": "Landlord", "location": "Inner Sydney", "bio": "Accountant. Two investment units. Golf on Saturdays.",
+     "posts": [
+      {"date": "2026-03-09", "text": "Unpopular opinion: landlords are not the villains. My mortgage repayments on one unit went up $1,400 a month in two years. Land tax up, strata up, insurance up. I've only raised rent $60."},
+      {"date": "2026-03-30", "text": "Every new rule makes me think about selling. If small investors like me sell, those units don't vanish, but someone has to provide rentals. The government certainly isn't building them."},
+      {"date": "2026-04-19", "text": "Negative gearing gets blamed for everything. Remove it and see what happens to rental supply. Some of us are just trying to fund retirement, not get rich."},
+      {"date": "2026-05-08", "text": "@nursenat_westie you're right, and I don't dismiss it. I'd take lower rent for a reliable long-term tenant any day. The churn costs me money too."},
+      {"date": "2026-05-25", "text": "The inquiry should look at the cost of building and owning, not just what renters pay. Half the 'rent' is going to the bank and the state government."}
+     ]},
+    {"handle": "uni_student_sam", "name": "Sam", "gender": "Non-binary", "age_group": "18-24", "tenure": "Renter", "location": "Inner Sydney", "bio": "Philosophy + politics. Bike, zines, 3am thoughts. they/them",
+     "posts": [
+      {"date": "2026-03-03", "text": "Five of us in a three-bedroom in Camperdown. I sleep in what the listing called a 'study nook'. $310 a week. For a cupboard with a window. #SydneyRent"},
+      {"date": "2026-03-21", "text": "Working 25 hours a week at a cafe to pay rent means I'm failing my units. The housing crisis is an education crisis too, no one talks about that."},
+      {"date": "2026-04-08", "text": "Landlord hasn't fixed the mould in the bathroom since January. Reported it four times. Scared to push because our lease is up in June."},
+      {"date": "2026-04-26", "text": "Housing should be a human right, not an asset class. Wild that this is controversial."},
+      {"date": "2026-05-14", "text": "Mum keeps saying come home to Tamworth. Part of me wants to. But then what, give up uni because I can't afford a room? Feels like losing."}
+     ]},
+    {"handle": "tash_moved_to_orange", "name": "Tash", "gender": "Woman", "age_group": "35-49", "tenure": "Owner-occupier", "location": "Regional NSW", "bio": "Graphic designer, remote. Ex-Marrickville, now Orange. Sourdough survivor.",
+     "posts": [
+      {"date": "2026-03-12", "text": "Two years since we left Sydney for Orange. Bought a three-bedroom with a yard for less than our Marrickville rent would have cost us in four years. Zero regrets."},
+      {"date": "2026-04-04", "text": "Okay some regrets. Miss my friends. Miss the food. My partner's two-hour drive each way twice a week to the office is brutal. Remote work only goes so far."},
+      {"date": "2026-04-22", "text": "Getting side-eye from locals who say people like us priced them out of Orange. Fair, honestly. We fled one crisis and helped make another one."},
+      {"date": "2026-05-12", "text": "Local GP has a three-month wait. More people moved here, the services didn't come with them. Same story as Sydney, just smaller."}
+     ]},
+    {"handle": "dave_the_landlord", "name": "Dave", "gender": "Man", "age_group": "35-49", "tenure": "Landlord", "location": "Western Sydney", "bio": "Electrician. 'Accidental landlord'. Rents out my old unit after moving in with my partner.",
+     "posts": [
+      {"date": "2026-03-14", "text": "Accidental landlord here. Kept my old unit in Blacktown when I moved in with my partner. One property. I'm not a property baron, I'm a sparky with a mortgage."},
+      {"date": "2026-04-01", "text": "My tenant has been there five years, always pays, keeps it nice. I've not raised her rent since 2023 even though I'm under water some months. Good tenants are gold."},
+      {"date": "2026-04-23", "text": "Agent wanted me to put the rent up $120 to 'market'. Said no. She told me I was 'leaving money on the table'. Agents push this stuff more than landlords do, in my experience."},
+      {"date": "2026-05-15", "text": "If the bank keeps hiking I'll have to sell. Then my tenant is out on her ear through no fault of either of us. Nobody wins."}
+     ]},
+    {"handle": "mia_at_mums", "name": "Mia", "gender": "Woman", "age_group": "25-34", "tenure": "Living with parents", "location": "Western Sydney", "bio": "Primary school teacher. 29. Yes I still live at home. No, I don't want to talk about it.",
+     "posts": [
+      {"date": "2026-03-06", "text": "29, full-time teacher, still in my childhood bedroom in Campbelltown. Saving every cent. At this rate I'll have a deposit by 41. Super cool."},
+      {"date": "2026-03-27", "text": "Love my parents but my boyfriend and I have never lived together. Hard to build a life when your 'home' has a curfew because Dad works early."},
+      {"date": "2026-04-18", "text": "People say 'just move further out'. I AM further out. I commute 75 minutes to my school. Further out than this is basically Goulburn."},
+      {"date": "2026-05-09", "text": "Friends who got help from parents with deposits act like they did it all themselves. Not saying it's wrong to get help. Just own it."},
+      {"date": "2026-05-23", "text": "Feeling grateful today honestly. Mum made lasagne, my sister's home, everyone's laughing. Living at home isn't a failure. The system's the failure."}
+     ]},
+    {"handle": "leo_renter_newtown", "name": "Leo", "gender": "Man", "age_group": "25-34", "tenure": "Renter", "location": "Inner Sydney", "bio": "Chef. Newtown local. Opinions on pho.",
+     "posts": [
+      {"date": "2026-03-10", "text": "Got a no-grounds notice. Landlord wants to 'renovate'. Same thing happened to my mate on King St, they repainted and relisted it for $200 more. #SydneyRent"},
+      {"date": "2026-03-31", "text": "Newtown's in my bones. Worked here eight years. My restaurant's here. My people are here. Now I'll probably be pushed to Campsie and commute in for 11pm finishes."},
+      {"date": "2026-04-14", "text": "Hospo wages don't stretch to inner city rents. Soon there'll be no one to cook the food in the suburbs that are famous for food."},
+      {"date": "2026-05-05", "text": "Moved. Campsie's actually great, best Korean food of my life. But my last train home is 11:42 and I finish at 11:30. Taxis eat my tips."},
+      {"date": "2026-05-26", "text": "Went to a tenants' union meeting. 60 people in a church hall. Felt less alone than I have in months. Turns out it's not just me being bad at life."}
+     ]},
+    {"handle": "retired_ray", "name": "Ray", "gender": "Man", "age_group": "65+", "tenure": "Owner-occupier", "location": "Regional NSW", "bio": "Retired from the railways. Central Coast. Fishing, grandkids, footy.",
+     "posts": [
+      {"date": "2026-03-08", "text": "Everyone wants to live in the inner city and then complains it's dear. We started in a fibro shack in Toukley with an outdoor dunny. You make sacrifices."},
+      {"date": "2026-03-29", "text": "Not being racist but when you bring in this many people this fast without building houses, of course rents go up. It's just supply and demand."},
+      {"date": "2026-04-10", "text": "@priya_in_parra fair enough, you make a good point. I've got no problem with people coming here to work. My problem is with governments that don't plan for it."},
+      {"date": "2026-05-03", "text": "My grandson's 24 and paying more in rent than I earned in a month at his age, even adjusting for inflation he reckons. I didn't believe him till he showed me."},
+      {"date": "2026-05-19", "text": "Maybe I was a bit hard on the young ones. It's not the same game we played. Doesn't mean they shouldn't work hard, mind you."}
+     ]},
+    {"handle": "fatima_k", "name": "Fatima", "gender": "Woman", "age_group": "35-49", "tenure": "Renter", "location": "Western Sydney", "bio": "Mum of two. Disability support worker. Lakemba.",
+     "posts": [
+      {"date": "2026-03-13", "text": "On the social housing waitlist for six years. Six. My kids have grown up while I wait. Meanwhile 58% of my income goes to rent."},
+      {"date": "2026-04-05", "text": "Had to choose between new school shoes and the electricity bill this week. My son wore his cousin's old ones. He didn't complain which almost made it worse."},
+      {"date": "2026-04-24", "text": "The property manager does inspections every three months and takes photos of everything, even my kids' bedrooms. It feels like being watched in your own home."},
+      {"date": "2026-05-11", "text": "Mosque community has been amazing. Someone found my brother-in-law a room, another family lends us their car. When the system fails you, your people catch you."},
+      {"date": "2026-05-27", "text": "The government announced 'record investment' in social housing. 3,000 homes. There are 57,000 households on the list. Do the maths."}
+     ]},
+    {"handle": "ben_firsthome", "name": "Ben", "gender": "Man", "age_group": "25-34", "tenure": "Owner-occupier", "location": "Western Sydney", "bio": "Data analyst. New homeowner. Learning what a 'strata levy' is.",
+     "posts": [
+      {"date": "2026-03-15", "text": "Got the keys today!! Two-bedroom apartment in Schofields. Couldn't have done it without my parents going guarantor. Not going to pretend otherwise."},
+      {"date": "2026-04-06", "text": "Mortgage is 47% of my take-home. Technically 'mortgage stress'. But at least it's mine and nobody can kick me out for wanting to paint a wall."},
+      {"date": "2026-04-27", "text": "Weird feeling: my mates who rent kind of went quiet when I told them. Like I crossed over to the other side. I still think the system is broken."},
+      {"date": "2026-05-17", "text": "Building has cracks and the developer has gone bust. Strata special levy of $14k incoming. So that's fun. Home ownership isn't the safe harbour I was sold."}
+     ]},
+    {"handle": "housing_now_kate", "name": "Kate", "gender": "Woman", "age_group": "25-34", "tenure": "Renter", "location": "Inner Sydney", "bio": "Organiser, renters' rights group. Views my own. Rent is theft (joking) (mostly).",
+     "posts": [
+      {"date": "2026-03-02", "text": "Rally for renters' rights this Saturday, Town Hall, 11am. Rent caps, end no-grounds evictions for real, minimum standards. Bring your mates and your mouldy bathroom photos. #SydneyRent"},
+      {"date": "2026-03-23", "text": "Every rent cap critic says 'supply'. Sure, build more. But the people being evicted this month can't wait ten years for supply. We need protections now AND supply."},
+      {"date": "2026-04-12", "text": "Submitted our evidence to the Housing Affordability Inquiry: 1,200 renter stories. Top issues: rent rises, repairs, fear of complaining. Not avocados."},
+      {"date": "2026-04-29", "text": "@hugh_property_tips 'just buy' is not advice. It's a time machine. Prices are 13 times median income."},
+      {"date": "2026-05-20", "text": "Small win: council voted to cap short-stay rentals in our area. Housing is for people to live in. Keep going everyone."}
+     ]},
+    {"handle": "hugh_property_tips", "name": "Hugh", "gender": "Man", "age_group": "50-64", "tenure": "Landlord", "location": "Inner Sydney", "bio": "Property investor, 6 doors. Mentor. DMs open for strategy calls.",
+     "posts": [
+      {"date": "2026-03-16", "text": "Rents are a symptom, not the disease. The disease is that NSW makes it nearly impossible to build. Every rent cap in history has reduced supply. Read some economics."},
+      {"date": "2026-04-07", "text": "Started with one unit at 28. Ate two-minute noodles, worked two jobs. Young people today want the house without the sacrifice. Harsh but true."},
+      {"date": "2026-04-28", "text": "@housing_now_kate Investors provide 30% of housing in this state. Drive us out and watch the rental market collapse. Then who'll you protest?"},
+      {"date": "2026-05-13", "text": "Thinking of shifting my portfolio to Brisbane. NSW has become hostile to investors. Land tax, new rules, bad press. Capital goes where it's welcome."}
+     ]},
+    {"handle": "ana_teacher_wollongong", "name": "Ana", "gender": "Woman", "age_group": "35-49", "tenure": "Renter", "location": "Regional NSW", "bio": "High school science teacher. Illawarra. Bushwalks + bad puns.",
+     "posts": [
+      {"date": "2026-03-18", "text": "Wollongong rents have gone up 40% in four years. Sydney people working from home moved down and took the houses. Now our school can't fill teaching vacancies."},
+      {"date": "2026-04-11", "text": "Lost a great young maths teacher this term. She couldn't find anywhere to rent within an hour of school. Went back to live with her parents in Queensland."},
+      {"date": "2026-04-25", "text": "Key worker housing: if you want teachers, nurses and cops in your town, you have to give them somewhere to live. Not complicated."},
+      {"date": "2026-05-16", "text": "@tash_moved_to_orange appreciate you saying it. I don't blame individuals. It's what happens when a city exports its housing crisis to the regions."},
+      {"date": "2026-05-28", "text": "Lease renewed at only $20 more! Landlord said he'd rather keep 'the teacher who fixed the gate'. Being a good tenant shouldn't feel like luck."}
+     ]},
+    {"handle": "tom_and_jess_bubs", "name": "Tom", "gender": "Man", "age_group": "35-49", "tenure": "Renter", "location": "Western Sydney", "bio": "Dad to Jess (6) and Ollie (3). Forklift driver. Tired.",
+     "posts": [
+      {"date": "2026-03-20", "text": "Moved four times in six years. My daughter is on her third school and she's in Year 1. Every move she cries about losing friends. That's what rental insecurity actually looks like."},
+      {"date": "2026-04-13", "text": "Rejected for a house because we have 'young children and a dog'. Not allowed to say no for kids apparently but they find a way."},
+      {"date": "2026-05-04", "text": "Thinking of moving to my brother's in Adelaide. Cheaper, closer to family. But all our support is here. Grandma does school pickup. Can't afford to stay, can't afford to go."},
+      {"date": "2026-05-22", "text": "Kids asked when we'll have our 'forever house' like in their book. Told them 'one day'. Hope I'm not lying."}
+     ]},
+    {"handle": "old_mate_morrie", "name": "Morrie", "gender": "Man", "age_group": "65+", "tenure": "Renter", "location": "Inner Sydney", "bio": "71. Ex-merchant navy. Renting in Surry Hills 30 yrs. Still kicking.",
+     "posts": [
+      {"date": "2026-03-17", "text": "71 years old and renting. Not every old fella owns a house, you know. Never got around to buying, then it was too late. Now the pension barely covers rent."},
+      {"date": "2026-04-16", "text": "Landlord's selling. If the new owner wants me out, where does a 71 year old on the pension go? Nobody rents to old men with a bad hip."},
+      {"date": "2026-05-07", "text": "The young ones on my street have been good to me. Kate from upstairs helped me fill in the housing forms. We're all in the same boat, the old and the young renters."},
+      {"date": "2026-05-24", "text": "New owner says I can stay! Rent up $40 but I can stay. Slept properly for the first time in six weeks."}
+     ]},
+    {"handle": "kai_still_home", "name": "Kai", "gender": "Man", "age_group": "18-24", "tenure": "Living with parents", "location": "Inner Sydney", "bio": "Apprentice electrician. Gamer. Dad jokes (I'm not a dad).",
+     "posts": [
+      {"date": "2026-03-22", "text": "22 and living with my folks in Marrickville. Honestly it's fine? Saving heaps, mum's cooking, close to work. Not sure why everyone acts like it's tragic."},
+      {"date": "2026-04-20", "text": "Looked at what my mates pay in rent and decided I'm never leaving. Will be 45 in my old bedroom with my Pokémon posters. Living the dream."},
+      {"date": "2026-05-18", "text": "Real talk though, my older brother's 30 and still here too and he's getting pretty down about it. Wants a family. Feels stuck. It's different when you're older."}
+     ]}
+  ]
+}

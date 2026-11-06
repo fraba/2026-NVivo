@@ -1,0 +1,416 @@
+---
+title: "NVivo for HDR researchers"
+subtitle: "Session 2<br>From codes to analysis"
+author: "Takwa Tissaoui, Alicia Wang and Raka Pamungkas"
+institute: "Organised by Francesco Bailo with the Graduate Research School, The University of Sydney<br>Monday 9 November 2026, 12:30–14:00"
+format:
+  revealjs:
+    self-contained: true
+    toc: false
+    theme: [default, "assets/sydney.scss"]
+    slide-number: c
+    scrollable: false
+    pdf-max-pages-per-slide: 1
+    history: false
+    ratio: 4-3
+execute:
+  echo: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(countdown)
+```
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and recognise their continuing connection to land, water and culture. The University of Sydney is located on the land of the Gadigal people of the Eora Nation. I pay my respects to their Elders, past and present.
+
+---
+
+## Plan for this session
+
+*Based on: Mortelmans, D. (2025). [Doing Qualitative Data Analysis with NVivo](https://doi.org/10.1007/978-3-031-66014-6). Springer. Open access.*
+
+1. Recap and reopen your project (5 min)
+2. Refining the codebook (10 min). *Ch. 8*
+3. Coding with classifications (15 min). *Ch. 9*
+4. Querying (coded) data (30 min). *Ch. 12*
+5. Exploring and visualising (10 min). *Ch. 10, 13*
+6. AI and (semi-)automatic coding (5 min). *Ch. 19*
+7. Teams and reporting (10 min). *Ch. 20, 14*
+8. Wrap-up (5 min)
+
+# Recap
+
+---
+
+## Where we are
+
+```
+Import → Code → Organise → Retrieve → Interpret → Write
+   (Session 1)     (now)      (now)     (you)    (you)
+```
+
+- **Codes** label fragments (references) of your data
+- The **codebook** is hierarchical, with **aggregate** switched on for parents
+- **Memos** hold your thinking
+
+::: callout-note
+Reopen your **#SydneyRent** project from this morning. New here? Create a project and **Import → Files** the 19 files in `posts/`, tick **"Create a case for each imported file"**, and code a few posts.
+:::
+
+# 1. Refining the codebook
+
+---
+
+## Keeping the codebook healthy (Ch. 8) {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Merge** two codes that mean the same thing
+
+- Cut code A → right-click code B → **Merge Into Selected Code**
+
+**Split** a code that covers two ideas (the book's example)
+
+1. Duplicate "Due to tourism and development"
+2. Rename the two copies "Due to tourism" and "Due to development"
+
+In our data: is *Blame → Government* really two codes, *planning and approvals* and *social housing*?
+
+3. Open each one and **uncode** the references that don't belong (right-click on the stripe → Uncode)
+:::
+
+::: {.column width="50%"}
+**Move and reorganise**
+
+- Drag codes into new parents
+- Rename them freely: the coding is kept
+
+**Uncode**
+
+- Quick: right-click on the stripe → Uncode
+- Several codes at once: select the passage → Uncode → choose codes
+
+**Record every change in a memo** (your audit trail)
+:::
+::::
+
+# 2. Coding with classifications
+
+---
+
+## A different kind of coding (Ch. 9)
+
+- **Thematic codes** capture *what* is said. **Cases** capture *who* (or which unit) says it: a person, an organisation, a site.
+- **Classifications** describe cases with **attributes**: gender, age group, education…
+- Two tools:
+  - **Case classifications**: background characteristics of people or organisations
+  - **File classifications**: mostly for **literature reviews** (author, year, journal; Ch. 21)
+- **Why not just make codes for "woman" or "40–49"?** The book tries that: the codebook grows by a third, and you have to code every interview by hand.
+
+---
+
+## Setting up cases and attributes {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Cases**
+
+- When importing: tick **"Create a case for each imported file"**
+- Or afterwards: select files → right-click → **Create As Cases**
+- Focus groups: each participant is a case, coded from their turns (Ch. 15)
+:::
+
+::: {.column width="50%"}
+**Attributes**
+
+- Create → **Case Classification** (e.g. "Person"), then add attributes
+- **Most efficient:** import a descriptive matrix from **Excel** (Import → Classification Sheets), one row per case and one column per attribute
+- Case names must **match exactly**
+:::
+::::
+
+---
+
+## 💻 HANDS-ON: Explore the classifications
+
+1. If you haven't already: select all files → right-click → **Create As Cases**
+2. **Import → Classification Sheets** → `users.xlsx`, as a **case classification** (e.g. "User")
+3. Open the classification. Check that all 19 cases have their gender, age group, tenure and location.
+4. Open the case for **old_mate_morrie**: a renter aged 65+. Does he fit the "boomer" stereotype in other users' posts?
+
+```{r}
+countdown(minutes = 5, seconds = 0)
+```
+
+# 3. Querying (coded) data
+
+---
+
+## Eight queries (Ch. 12)
+
+| Query | Needs coding? | Answers |
+|---|---|---|
+| **Text Search** | No | Where is *this word or phrase* used? |
+| **Word Frequency** | No | Which words dominate? |
+| **Coding** | Yes | Everything coded at X (and/or/not Y) |
+| **Compound** | Partly | A text search *within* coded material |
+| **Matrix Coding** | Yes | How does X vary across groups, codes or coders? |
+| **Crosstab** | Yes | X by *two* attributes at once (e.g. young women) |
+| **Coding Comparison** | Yes | Do two coders agree? (kappa, % agreement) |
+| **Group** | Yes | Which items are connected to which? |
+
+---
+
+## Text Search and Word Frequency {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Text Search** (Explore → Text Search)
+
+- Words and phrases, wildcards (`landlord*`), stemmed and similar words
+- Results show a **word tree** with the term in context
+- Can be used **as a coding tool**: save the results as a code, then *check them by hand*
+:::
+
+::: {.column width="50%"}
+**Word Frequency** (Explore → Word Frequency)
+
+- A quick first look at new data
+- Add stop words to remove noise
+- Word clouds: good for exploring, rarely evidence
+:::
+::::
+
+::: callout-warning
+Text search finds *words*, not *meaning*. It never replaces reading and coding.
+:::
+
+---
+
+## Coding query {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Basic:** Explore → Coding → choose a code → Run
+
+**Advanced:** combine criteria
+
+- **AND / OR / NOT** across codes
+- **NEAR**: codes close together
+- Restrict to cases or attribute values (e.g. *only* women aged 40–49)
+:::
+
+::: {.column width="50%"}
+**Reading results**
+
+- References from all files, with **coding stripes**
+- **Spread coding** to the surrounding sentence or paragraph
+- *"Never ever should the analysis be done outside the context of where themes have been coded"* (Ch. 3)
+- **Save results as a code** to keep or code from them
+:::
+::::
+
+---
+
+## Matrix coding query: "a crucial analytical tool" {.smaller}
+
+| References            | Renter | Landlord | Owner |
+|-----------------------|:------:|:--------:|:-----:|
+| Blame → Investors     |   ?    |    ?     |   ?   |
+| Blame → Government    |   ?    |    ?     |   ?   |
+| Insecurity and stress |   ?    |    ?     |   ?   |
+
+*Your own coding fills in the cells*
+
+:::: columns
+::: {.column width="50%"}
+- **Rows**: codes
+- **Columns**: other codes, cases, **attribute values**, or even **users** (to compare coders)
+:::
+
+::: {.column width="50%"}
+- **Double-click a cell** to read the references at that intersection
+- **Crosstab** handles two attributes at once (age × gender)
+:::
+::::
+
+::: callout-important
+The numbers tell you *where to read*. They are not findings.
+:::
+
+---
+
+## 💻 HANDS-ON: Run your queries {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Task 1: Text Search (4 min)**
+
+- Search for `landlord*`, open the word tree, and save the results as a new code. Does every hit really talk *about* landlords?
+
+**Task 2: Coding Query (5 min)**
+
+- One code, then two codes with **AND**, then **OR**. Compare the results.
+- Spread coding to the paragraph
+:::
+
+::: {.column width="50%"}
+**Task 3: Matrix Coding (8 min)**
+
+- Rows: 3 thematic codes
+- Columns: **Tenure** from the case classification
+- Double-click the most surprising cell and **read** the references
+- Write a 2-line **memo** on what you see
+:::
+::::
+
+```{r}
+countdown(minutes = 17, seconds = 0, top = TRUE)
+```
+
+# 4. Exploring and visualising
+
+---
+
+## Tools for interpretation (Ch. 10, 13) {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Exploring coded data (Ch. 10)**
+
+- **Explore diagram**: how one item connects to others
+- **Comparison diagram**: what two items (e.g. two cases) share and don't share
+- **Framework matrix**: cases × codes grid where you write **summaries** of the coded material
+
+*"None of these three are indispensable"*. Try them and keep what works for you.
+:::
+
+::: {.column width="50%"}
+**Maps (Ch. 13)**
+
+- **Mind map**: brainstorm and organise ideas
+- **Concept map**: develop theoretical concepts and the relationships between them
+- **Project map**: visualise how items in the project are connected
+:::
+::::
+
+# 5. AI and (semi-)automatic coding
+
+---
+
+## AI in NVivo (Ch. 19) {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Semi-automatic** (structure-based, no AI)
+
+- **Paragraph styles**: if transcripts use heading styles for questions and speakers, NVivo can code by question or speaker
+- **In vivo coding**, coding from text-search results
+
+**AI-driven autocoding** ("coding enhancements"; on University licences only if the University has bought them)
+
+- **Themes** and **sentiment** identified automatically
+- **Coding by pattern**: extends your existing coding to new data
+:::
+
+::: {.column width="50%"}
+**Before you use it**
+
+- **Ethics**: does your approval cover this processing of your data?
+- **Disclosure**: report AI-assisted steps in your methods section, and check the HDR rules on AI use
+- **Check everything** by hand: autocoding is a first pass, not analysis
+- NVivo 15 adds an **AI Assistant** (e.g. suggesting child codes), with a limited free allowance and a paid add-on. This isn't covered in the book, and the same cautions apply.
+:::
+::::
+
+# 6. Teams and reporting
+
+---
+
+## Working in a team (Ch. 20, 12) {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Sharing a project**
+
+- Only **NVivo Collaboration Cloud** (server, paid) lets a team work in *one* project file at once. It is **not available under the USyd licence**.
+- **Standalone**: share password-protected projects or reports. Plan who codes what to avoid duplication and data loss.
+- Everyone must be on the **same NVivo version** (Ch. 4)
+- Your **user profile** (initials) tags who coded what
+:::
+
+::: {.column width="50%"}
+**Inter-coder agreement** (Ch. 12)
+
+- **Coding Comparison query**: % agreement and **kappa** per code and file
+- Matrix coding with **users as columns** shows where coders differ
+- Discuss disagreements and **refine code descriptions**
+- Agreement is a way to develop the codebook, not proof of validity
+:::
+::::
+
+---
+
+## Reporting and exporting (Ch. 14) {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Getting things out**
+
+- **Reports**: standard overviews (e.g. codebook, cases), or build your own
+- **Text reports (extracts)**: export (parts of) your data to Word or Excel
+- **Codebook** with descriptions → Word or Excel
+- **REFI-QDA** format: move a project between NVivo, ATLAS.ti and MAXQDA
+:::
+
+::: {.column width="50%"}
+**In your methods chapter**
+
+- How you coded: deductive, inductive or mixed; unit of coding
+- How the codebook evolved (your memos are the audit trail)
+- How you compared: classifications and queries
+- Inter-coder checks, if you did any
+- Any AI-assisted steps
+- Put the codebook in an **appendix**
+:::
+::::
+
+# Wrap-up
+
+---
+
+## Take-aways
+
+- **Refine** the codebook continuously (merge, split, move) and **memo** the changes
+- **Cases and classifications** turn coding into comparison
+- **Queries** retrieve material. **Read it in context.**
+- Numbers in a matrix show you where to look. They are not findings.
+- Teams: same version, compare coders, refine descriptions
+- AI: check your ethics approval, disclose, verify
+
+---
+
+## Where to go next
+
+Mortelmans (2025), open access: [doi.org/10.1007/978-3-031-66014-6](https://doi.org/10.1007/978-3-031-66014-6)
+
+:::: columns
+::: {.column width="50%"}
+- Ch. 11 Secondary data management (sets, relationships)
+- Ch. 15 Focus groups
+- Ch. 16 Photos, sound and video
+- Ch. 17 Social media
+:::
+
+::: {.column width="50%"}
+- Ch. 18 Mixed methods
+- Ch. 19 AI and autocoding
+- Ch. 20 Team projects
+- Ch. 21 Literature reviews
+:::
+::::
+
+**Please fill in the feedback form.** Thank you!

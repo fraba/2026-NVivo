@@ -1,0 +1,539 @@
+---
+title: "NVivo for HDR researchers"
+subtitle: "Session 1<br>From data to codes"
+author: "Takwa Tissaoui, Alicia Wang and Raka Pamungkas"
+institute: "Organised by Francesco Bailo with the Graduate Research School, The University of Sydney<br>Monday 9 November 2026, 10:00–11:30"
+format:
+  revealjs:
+    self-contained: true
+    toc: false
+    theme: [default, "assets/sydney.scss"]
+    slide-number: c
+    scrollable: false
+    pdf-max-pages-per-slide: 1
+    history: false
+    ratio: 4-3
+execute:
+  echo: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(countdown)
+```
+
+## Acknowledgement of Country
+
+I would like to acknowledge the Traditional Owners of Australia and recognise their continuing connection to land, water and culture. The University of Sydney is located on the land of the Gadigal people of the Eora Nation. I pay my respects to their Elders, past and present.
+
+---
+
+## About these sessions
+
+*Based on: Mortelmans, D. (2025). [Doing Qualitative Data Analysis with NVivo](https://doi.org/10.1007/978-3-031-66014-6). Springer. Open access.*
+
+:::: columns
+::: {.column width="50%"}
+**Session 1 (now): From data to codes**
+
+- What NVivo does (and doesn't do)
+- Setting up a project
+- Importing data
+- Memos and annotations
+- Thematic coding
+:::
+
+::: {.column width="50%"}
+**Session 2 (12:30): From codes to analysis**
+
+- Refining the codebook
+- Cases and classifications
+- Queries
+- Teamwork, AI and reporting
+:::
+::::
+
+::: callout-note
+You need **NVivo installed and licensed** on your laptop (University licence; see the pre-session email). Download and unzip **`nvivo-practice-data.zip`** (synthetic social media posts). We use the same data in both sessions.
+:::
+
+---
+
+## Plan for today
+
+1. Who's in the room? (5 min)
+2. What NVivo can (not) do for you (10 min). *Ch. 2–3*
+3. Getting started: installing, licence, user profile (5 min). *Ch. 4*
+4. Setting up your project and importing data (20 min). *Ch. 5–6*
+5. Memos and annotations (10 min). *Ch. 7*
+6. Thematic coding (30 min). *Ch. 8*
+7. Wrap-up and homework (10 min)
+
+---
+
+## Who's in the room?
+
+- What discipline are you in?
+- What is your data: interviews, focus groups, documents, social media, images, video?
+- Where are you in your project: designing, collecting, analysing, writing up?
+- Have you used NVivo (or ATLAS.ti or MAXQDA) before?
+
+# 1. What NVivo can (not) do for you
+
+---
+
+## CAQDAS
+
+**C**omputer **A**ssisted **Q**ualitative **D**ata **A**nalysis **S**oftware
+
+- NVivo is one of three dominant packages, along with ATLAS.ti and MAXQDA
+- It descends from NUD\*IST (developed by Lyn and Tom Richards from 1981)
+- It has **three core functions** (Mortelmans, Ch. 3):
+  1. **Data management**: everything in one project file
+  2. **Coding**: attaching labels to pieces of data
+  3. **Analysing**: retrieving coded material with queries, building conceptual frameworks
+
+---
+
+## Inside and outside NVivo {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+```
+┌─────────────────────────┐
+│   INSIDE NVIVO:         │
+│   • Data management     │
+│   • Coding data         │
+│   • Querying data       │
+└─────────────────────────┘
+           ↓
+┌─────────────────────────┐
+│   OUTSIDE NVIVO:        │
+│   • Reading             │
+│   • Interpreting        │
+│   • Writing             │
+└─────────────────────────┘
+```
+:::
+
+::: {.column width="50%"}
+**NVivo does not:**
+
+- produce theoretical schemes or storylines for you
+- replace reading and interpretation
+- tell you what your data means
+
+A query gives you **a list of references** that used to be scattered across your data and are now in one window. *You* read, compare and write.
+:::
+::::
+
+---
+
+## Code and retrieve
+
+The fundamental principle since the 1980s:
+
+1. **Import** raw data (text, audio, video, images, social media)
+2. **Code** it: attach labels (codes) to fragments (references)
+3. **Retrieve** coded material with queries
+4. **Analyse in context**: never interpret a fragment outside the passage it came from
+
+::: callout-important
+Coding is a means, not the end. Beware "analytical madness" (endless coding) and "quantification creep" (counting codes instead of interpreting).
+:::
+
+# 2. Getting started
+
+---
+
+## Installing and configuring NVivo (Ch. 4) {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Installing**
+
+- **USyd licence (NVivo 15):** register the University's enterprise key in your **myLumivero** account (University email only). Then download, install, and sign in with your myLumivero credentials. Steps and the key are in ICT KB0011243 (linked from Canvas).
+- Windows: the set-up wizard also installs **Microsoft SQL Server**, which NVivo needs to run
+- **NCapture** (browser add-on) is optional: you only need it for web pages and social media
+- Mac: install from the `.dmg`
+
+**Collaboration Cloud** is *not* part of the USyd licence
+:::
+
+::: {.column width="50%"}
+**User profile**
+
+- NVivo logs who does what. Your **initials** appear on every item you create or change.
+- This matters for team projects and your audit trail
+
+**Updates**
+
+- Install updates, but be careful: **updates can change the project file format**
+- In a team, **everyone must be on the same version**
+:::
+::::
+
+---
+
+## Windows vs Mac
+
+| | Windows | Mac |
+|---|---|---|
+| Project file | `.nvp` | `.nvpx` |
+| Save reminder | Yes | No: save often! |
+| Feature set | Complete | Some features missing or behind |
+
+::: callout-warning
+Windows and Mac project files are **not directly interchangeable**. Projects must be converted. Decide on one platform early, especially in a team.
+:::
+
+# 3. Setting up your project
+
+---
+
+## One project = one file (Ch. 6)
+
+- **Everything** lives in one file: data, codes, memos, classifications, queries, visualisations
+- New project: Welcome screen → **New Project** → title, description, location
+- **Sample projects**: *Multi-method* (used in all the book's examples) and *Automated Insights* open from the Welcome screen. They're good for practising after the workshop.
+
+::: callout-important
+**Backups are your job.** NVivo's recovery file is *not* a backup.
+
+- File → **Copy Project** → save to a different drive
+- Mortelmans' rule: **back up daily, keep one backup per week**
+- Don't work on a project file that OneDrive or Dropbox is syncing live. Work locally and sync the backups.
+:::
+
+---
+
+## The workspace and jargon (Ch. 5) {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+- **Navigation View** (left): the project structure
+- **List View** (centre): the contents of the selected folder
+- **Detail View** (right or bottom): where you open and work on items
+- **Ribbon** (top): Home, Import, Create, Explore, Share, Modules
+:::
+
+::: {.column width="50%"}
+**Main sections** (predefined, can't be renamed; you add your own subfolders):
+
+- **Data**: Files, File Classifications, Externals
+- **Coding**
+- **Cases**
+- **Notes**: Memos, Annotations
+- **Sets**, **Queries**
+- **Visualisations**, **Reports**
+:::
+::::
+
+---
+
+## Importing data (Ch. 6)
+
+- **Import → Files**: Word, PDF, text, audio, video, images, spreadsheets
+- Imported files go into **Data → Files**. Make **subfolders** (e.g. by wave, site or data type).
+- Imported files are copied *into* the project
+- **"Create a case for each imported file"**: we'll come back to this in Session 2 (cases and classifications, Ch. 9)
+- **Externals**: references to material you can't import, like books or large archives
+- NVivo can **transcribe** audio and video (Edit mode → Transcribe mode → entries with timestamps). Automated AI transcription outside NVivo is usually faster.
+
+---
+
+## Ethics and data security
+
+::: callout-warning
+Your `.nvp` file contains **all your participants' data** in one place.
+:::
+
+- Store it where your **ethics approval and data management plan** say it should be stored (e.g. RDS)
+- De-identify transcripts **before** you import them, where possible
+- Don't email project files around
+- Check what NVivo's **AI features** send to external servers before using them on sensitive data (Session 2)
+
+---
+
+## Our data: #SydneyRent {.smaller}
+
+:::: columns
+::: {.column width="55%"}
+**86 social media posts** by **19 users** on housing and renting in NSW (March–May 2026)
+
+- `posts/`: **one Word file per user**, which becomes one **case**. Each post starts with a *Heading 2* line (post number and date).
+- `users.xlsx`: each user's **gender, age group, tenure, location** (Session 2)
+- `all_posts.xlsx`: everything in one table
+:::
+
+::: {.column width="45%"}
+**Research question for today**
+
+*How do people in NSW make sense of the housing crisis: what do they experience, and whom do they blame?*
+
+::: callout-warning
+**Synthetic data.** All users and posts are fictional and were written for this workshop.
+:::
+:::
+::::
+
+---
+
+## 💻 HANDS-ON: Set up your project
+
+1. Create a new, empty project: `NVivo-HDR-workshop`
+2. Make a subfolder **Posts** under **Data → Files**
+3. **Import → Files**: select all 19 files in `posts/`
+4. Open two or three users' files in Detail View and read them
+5. Make your first backup: **File → Copy Project**
+
+```{r}
+countdown(minutes = 6, seconds = 0)
+```
+
+# 4. Memos and annotations
+
+---
+
+## Why memos? (Ch. 7)
+
+- Memos record **ideas as they arise**: while collecting, transcribing or coding (Glaser; Charmaz)
+- *"When an idea comes to mind, drop everything and put the idea in a memo"*
+- Types of memo: **theoretical**, **methodological/reflexive**, and **commentary** (on teammates' coding)
+- Memos are *linked* to the data but are **not data**. They are your reflection on the data.
+
+---
+
+## Memos vs annotations {.smaller}
+
+| | **Memo** | **Annotation** |
+|---|---|---|
+| What it is | A separate document (project item) | A note in the margin of a file |
+| Where | Notes → Memos | Inside a file, attached to a passage |
+| Link | Optional **memo link** to *one* item | Always tied to a specific fragment |
+| Can be coded? | Yes, like data | No |
+| Use for | Analytical ideas, reflexive notes, a project journal | Quick "post-it" reminders while coding |
+
+- **New memo:** Create → Memo. **Memo link:** right-click a file → Memo Link → Link to New Memo
+- **New annotation:** select text → right-click → New Annotation
+- **List of all memos and annotations:** Notes
+
+---
+
+## 💻 HANDS-ON: Write a memo
+
+1. Create a **project journal** memo. Write 2–3 lines on your first impressions of the data.
+2. Link a memo to one user's file
+3. Add an annotation to a passage that puzzles you
+
+```{r}
+countdown(minutes = 4, seconds = 0)
+```
+
+# 5. Thematic coding
+
+---
+
+## What are codes? (Ch. 8)
+
+- **Coding** = attaching a label to all the fragments that say something about the same subject
+  - e.g. "honesty" and "reliability" → **trust**
+- **Reference** = the coded fragment
+- **Code** = the label
+- **Codebook** = all the codes, organised hierarchically
+
+Three questions before you start:
+
+1. What do I need to code?
+2. How detailed should my codes be?
+3. How big is a reference? Word by word (documents), line or paragraph (interviews), or event by event (observation)
+
+---
+
+## Coding as asking questions (Ch. 8) {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Gaining depth: ask of each fragment**
+
+- What processes are going on here?
+- How does this process develop?
+- What do respondents do, think and feel when it occurs?
+- How, when and why do processes change?
+- What are the consequences?
+:::
+
+::: {.column width="50%"}
+**From general to specific**
+
+1. Which **research question** does this reference answer?
+2. Which **concept** (or part of a theory) does it refer to?
+3. What does it say about that concept?
+:::
+::::
+
+---
+
+## How detailed should a code be? {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Too general**
+
+- "Economic factors"
+- Loses meaning and doesn't discriminate
+
+**Too detailed**
+
+- "Fishing regulations causing job losses in coastal communities"
+- These are "once-only codes" that never recur
+:::
+
+::: {.column width="50%"}
+**About right (close to the data)**
+
+- "Fishing regulations"
+- "Job losses"
+
+**Strategy:** code close to the data → build hierarchies → **aggregate** upward
+:::
+::::
+
+---
+
+## Deductive or inductive? (Ch. 8) {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Deductive** (codebook first)
+
+1. Create or **import** your codebook (from Word, Excel, or a codebook from ATLAS.ti or MAXQDA)
+2. Code your files with it
+:::
+
+::: {.column width="50%"}
+**Inductive** (codebook emerges)
+
+1. Read your transcripts. Get the story in your head.
+2. Create new codes that fit the data
+3. Code with new and existing codes
+:::
+::::
+
+In practice most projects **mix the two**: a few codes from theory or your research questions, then open codes that come up as you read.
+
+---
+
+## Coding in NVivo: two methods {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**1. Coding by selection**
+
+1. Select a passage in Detail View
+2. Right-click → **Code Selection** (or Ctrl+F2 on Windows)
+3. Choose existing codes or type a new one
+4. Ctrl- or Shift-click to code to several codes at once
+
+**In vivo coding**: name the code after the participant's own words (right-click → Code In Vivo)
+:::
+
+::: {.column width="50%"}
+**2. Drag and drop**
+
+1. Open a file in Detail View
+2. Open the **Code Panel** (or have Codes in List View)
+3. Select text, click again, and drag it onto a code
+4. Drop it on an empty area to create a new code
+
+Fastest when you're using a small set of codes
+:::
+::::
+
+---
+
+## Seeing your coding
+
+- **Coding stripes** (Document → Coding Stripes): coloured bars in the margin showing which codes are attached where. Overlaps are visible.
+- **Code highlighting**: a background colour on coded text
+- **Code colours**: Code Properties → Colour. Use colours for families of codes.
+- Stripes also appear in query results (Session 2)
+
+**Mistakes?** Right-click on a stripe → **Uncode**
+
+---
+
+## The codebook {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+**Hierarchies**
+
+- **Parent** and **child** codes: right-click → New Code under the selected code
+- Or drag codes onto each other
+- Sort by name or by number of references
+
+**Aggregate**
+
+- Code Properties → **Aggregate coding from children**
+- Code close to the data and the coding is pushed up the tree automatically
+:::
+
+::: {.column width="50%"}
+**Good practice**
+
+- Write a **description** for every code (this is your codebook)
+- Avoid duplicate and overlapping codes
+- Revisit the codebook regularly: merge, split and move codes (Session 2)
+- Export it: right-click Codes → Export Codebook
+:::
+::::
+
+---
+
+## 💻 HANDS-ON: Code your data {.smaller}
+
+:::: columns
+::: {.column width="50%"}
+1. Open 3–4 users' files (try to pick a **renter**, a **landlord** and an **owner**)
+2. Code 8–12 posts:
+   - **deductive** codes from our research question, e.g. *Experiences* and *Blame*, then children such as *Blame → Investors* and *Blame → Government*
+   - at least **two inductive codes** of your own
+   - at least **one in vivo code**
+   - code some passages to **two codes** at once
+:::
+
+::: {.column width="50%"}
+3. Turn on **coding stripes**
+4. Build a **two-level hierarchy** and switch on **aggregate**
+5. Write a **description** for each code
+
+**Stuck?** Put your hand up and one of us will come over.
+:::
+::::
+
+```{r}
+countdown(minutes = 15, seconds = 0, top = TRUE)
+```
+
+# Wrap-up
+
+---
+
+## Take-aways
+
+- NVivo **manages, codes and retrieves**. You interpret.
+- **One file**: back it up daily and store it where your ethics approval says
+- **Memos** for ideas, **annotations** for margin notes
+- Code **close to the data**, organise in a **hierarchy**, **aggregate** upward
+- Every code needs a **description**
+
+---
+
+## Before Session 2 (12:30)
+
+- Keep coding: aim for **2–3 files** coded
+- Back up: **File → Copy Project**
+- Session 2 continues with **the same project and data**. If you missed Session 1, import `posts/` at the start (2 minutes).
+
+**Further reading:** Mortelmans (2025), Ch. 2–8 (open access)

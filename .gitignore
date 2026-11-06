@@ -1,0 +1,11 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+*_files/
+.quarto/
+# NVivo project files and participant data never go in the repo
+*.nvp
+*.nvpx
+data/nvivo-practice-data/
